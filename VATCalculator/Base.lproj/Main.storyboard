@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VATCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HoN-MM-4wv">
+                                <rect key="frame" x="0.0" y="317" width="414" height="89.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risultato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl8-c3-fRZ">
+                                        <rect key="frame" x="173.5" y="20" width="67" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44,33 €" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVA-ku-Usx">
+                                        <rect key="frame" x="158" y="41" width="98" height="32"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nl8-c3-fRZ" firstAttribute="centerX" secondItem="HoN-MM-4wv" secondAttribute="centerX" id="7cQ-8l-Yl9"/>
+                                    <constraint firstItem="HVA-ku-Usx" firstAttribute="top" secondItem="nl8-c3-fRZ" secondAttribute="bottom" id="kjn-Tl-IqY"/>
+                                    <constraint firstItem="nl8-c3-fRZ" firstAttribute="top" secondItem="HoN-MM-4wv" secondAttribute="top" constant="20" id="l2X-Wc-G68"/>
+                                    <constraint firstItem="HVA-ku-Usx" firstAttribute="centerX" secondItem="nl8-c3-fRZ" secondAttribute="centerX" id="rAn-X1-I0J"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGU-DH-Mdx">
+                                <rect key="frame" x="99.5" y="64" width="215" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inserisci il prezzo del tuo articolo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnl-PQ-LbC">
+                                <rect key="frame" x="103.5" y="130" width="207" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqW-Hj-dYQ">
+                                <rect key="frame" x="145" y="261" width="124" height="36"/>
+                                <color key="backgroundColor" red="0.92675858739999994" green="0.367726624" blue="0.38047230240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Calcola">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculatorButton_touchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ziR-7z-rzC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Uw-Jh-lYN">
+                                <rect key="frame" x="103.5" y="201" width="207" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="priceTextField_didEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="X83-v3-heu"/>
+                                    <action selector="priceTextField_editingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Bvx-bS-EZJ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HoN-MM-4wv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="4kC-rJ-hh1"/>
+                            <constraint firstItem="8Uw-Jh-lYN" firstAttribute="centerX" secondItem="wnl-PQ-LbC" secondAttribute="centerX" id="6fP-qH-SHz"/>
+                            <constraint firstItem="NGU-DH-Mdx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7VT-cf-sdB"/>
+                            <constraint firstItem="wqW-Hj-dYQ" firstAttribute="centerX" secondItem="8Uw-Jh-lYN" secondAttribute="centerX" id="K8X-8Y-4p9"/>
+                            <constraint firstItem="8Uw-Jh-lYN" firstAttribute="width" secondItem="wnl-PQ-LbC" secondAttribute="width" id="KJb-77-6en"/>
+                            <constraint firstItem="wqW-Hj-dYQ" firstAttribute="width" secondItem="8Uw-Jh-lYN" secondAttribute="width" multiplier="0.6" id="LVS-p5-dED"/>
+                            <constraint firstItem="HoN-MM-4wv" firstAttribute="top" secondItem="wqW-Hj-dYQ" secondAttribute="bottom" constant="20" id="MRB-s6-r1D"/>
+                            <constraint firstItem="wnl-PQ-LbC" firstAttribute="top" secondItem="NGU-DH-Mdx" secondAttribute="bottom" constant="30" id="Mp0-az-BQD"/>
+                            <constraint firstItem="wqW-Hj-dYQ" firstAttribute="top" secondItem="8Uw-Jh-lYN" secondAttribute="bottom" constant="30" id="QBr-vL-oWU"/>
+                            <constraint firstItem="HoN-MM-4wv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TSa-ue-hNI"/>
+                            <constraint firstItem="wnl-PQ-LbC" firstAttribute="centerX" secondItem="NGU-DH-Mdx" secondAttribute="centerX" id="dl7-3v-wm4"/>
+                            <constraint firstItem="8Uw-Jh-lYN" firstAttribute="top" secondItem="wnl-PQ-LbC" secondAttribute="bottom" constant="30" id="evK-Lh-g4u"/>
+                            <constraint firstItem="NGU-DH-Mdx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fgM-hP-Nkh"/>
+                            <constraint firstItem="wnl-PQ-LbC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="oX9-iZ-odv"/>
+                            <constraint firstItem="HoN-MM-4wv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tB2-an-U7c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="calculatorButton" destination="wqW-Hj-dYQ" id="sso-eE-Z65"/>
+                        <outlet property="priceTextField" destination="8Uw-Jh-lYN" id="cS1-oy-63B"/>
+                        <outlet property="resultLabel" destination="HVA-ku-Usx" id="heC-4p-tVw"/>
+                        <outlet property="vatResultView" destination="HoN-MM-4wv" id="ZI2-ew-7tP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="181"/>
+        </scene>
+    </scenes>
+</document>
